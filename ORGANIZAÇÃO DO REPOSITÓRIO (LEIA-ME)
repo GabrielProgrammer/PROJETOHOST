@@ -1,0 +1,4 @@
+- Repositório organizado;
+- Usemos o "BancoMySQL" para por os backups dos BD;
+      - Quando fizermos isto, ponhamos "a versão" maior que a anterior na frente do nome,
+      podemos começar com a versão 2.0;
