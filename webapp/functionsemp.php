@@ -2,8 +2,8 @@
 	session_start();
 
 	function seguranca() {
-		if($_SESSION['user']['nome'] == null) {
-			header("Location: ../PerfilEmpresa.php");
+		if($_SESSION['user']['username'] == null) {
+			header("Location: ../webapp/PerfilEmpresa.php");
 		}
 	}
 ?>

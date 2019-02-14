@@ -12,12 +12,12 @@
 
 		} else {
 			$message = '<h1>Por favor, preencha os campos corretamente.</h1>
-						<h3><a href="../index.html">Tentar Novamente</a></h3>'; 
+						<h3><a href="../Login.php">Tentar Novamente</a></h3>'; 
 						
 			echo $message;
 		}
 	} else {
-		header("Location: ../index.html");
+		header("Location: ../Login.php");
 	}
 
 	function checkValues($username, $senha) {
@@ -48,6 +48,7 @@
 			$_SESSION['user']['nome'] = $user['nome'];
 			$_SESSION['user']['email'] = $user['email'];
 			$_SESSION['user']['endereco'] = $user['endereco'];
+			$_SESSION['user']['idemp'] = $user['idemp'];
 			
 			//AQUI AGORA VAI FICAR TODAS ENTIDADES DA TABELA
 
@@ -55,7 +56,7 @@
 
 		} else {
 			$message = '<h1>Senha ou username Incorretos.</h1>
-						<h3>Por favor, <a href="../index.html">Tente Novamente</a></h3>';
+						<h3>Por favor, <a href="../index.php">Tente Novamente</a></h3>';
 						echo $message;
 						
 

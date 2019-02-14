@@ -12,12 +12,12 @@
 
 		} else {
 			$message = '<h1>Por favor, preencha os campos corretamente.</h1>
-						<h3><a href="../index.html">Tentar Novamente</a></h3>'; 
+						<h3><a href="../Login.php">Tentar Novamente</a></h3>'; 
 						
 			echo $message;
 		}
 	} else {
-		header("Location: ../index.php");
+		header("Location: ../Login.php");
 	}
 
 	function checkValues($username, $senha) {
@@ -36,7 +36,7 @@
 		$conexao = $config->conectaBanco();
 		
 
-		$query = "SELECT * FROM empresa WHERE username = '".$username."' AND senha = ".$senha; //O BD onde o PHP vai procurar
+		$query = "SELECT * FROM usuario WHERE username = '".$username."' AND senha = ".$senha; //O BD onde o PHP vai procurar
 
 		$result = mysqli_query($conexao, $query) or die('Invalid query: ' . $conexao->error); 
 
@@ -53,7 +53,7 @@
 
 		} else {
 			$message = '<h1>Senha ou username Incorretos.</h1>
-						<h3>Por favor, <a href="../index.html">Tente Novamente</a></h3>';
+						<h3>Por favor, <a href="../Login.php">Tente Novamente</a></h3>';
 						echo $message;
 						
 

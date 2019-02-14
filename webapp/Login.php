@@ -40,22 +40,22 @@
   <div class="form" style="margin-top: 100px">
       
       <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Cadastro Usuário</a></li>
-        <li class="tab"><a href="#login">Cadastro Empresa</a></li>
+        <li class="tab active"><a href="#signup">Login Usuário</a></li>
+        <li class="tab"><a href="#login">Login Empresa</a></li>
       </ul>
       
       <div class="tab-content">
         <div id="signup">   
-          <h1>Cadastre-se</h1>
+          <h1>Login User</h1>
           
-          <form action="cadastroservidor.php" method="post">
+          <form action="logs.php" method="post">
           
           <div class="top-row">
             <div class="field-wrap">
               <label>
                 Nome<span class="req">*</span>
               </label>
-              <input type="text" name="nome" required autocomplete="off" />
+              <input type="text" name="user" required autocomplete="off" />
             </div>
         
             <div class="field-wrap">
@@ -66,9 +66,9 @@
           <div class="top-row">
             <div class="field-wrap">
               <label>
-                USER<span class="req">*</span>
+                Senha<span class="req">*</span>
               </label>
-              <input type="text" name="username" required autocomplete="off" />
+              <input type="password" name="senha" required autocomplete="off" />
             </div>
         
             <div class="field-wrap">
@@ -76,56 +76,9 @@
             </div>
           </div>
 
-            <div class="field-wrap">
-            <label>
-              Data de Nascimento<span class="req">*</span>
-            </label>
-                <input type="data" name="dt_nascimento" required autocomplete="off"/>
-          </div>
 
-          <div class="field-wrap">
-            <label>
-              Email<span class="req">*</span>
-            </label>
-            <input type="text" name="email" required autocomplete="off"/>
-          </div>
           
-          <div class="field-wrap">
-            <label>
-              Senha<span class="req">*</span>
-            </label>
-            <input type="password" name="senha" required autocomplete="off"/>
-          </div>
-
-            <div class="field-wrap">
-            <label>
-              CPF<span class="req">*</span>
-            </label>
-            <input type="text" name="cpf" required autocomplete="off"/>
-          </div>
-
-            <div class="field-wrap">
-            <label>
-              RG<span class="req">*</span>
-            </label>
-            <input type="text" name="rg" required autocomplete="off"/>
-          </div>
-
-            <div class="field-wrap">
-            <label>
-              Estado<span class="req">*</span>
-            </label>
-            <input type="text" name="estado" required autocomplete="off"/>
-          </div>
-
-            <div class="field-wrap">
-            <label>
-              Cidade<span class="req">*</span>
-            </label>
-            <input type="text" name="cidade" required autocomplete="off"/>
-          </div>
-          
-              <button type="submit" class="button button-block"/>Cadastre-se</button>
+              <button type="submit" class="button button-block"/>Login</button>
           
           </form>
 
@@ -134,7 +87,7 @@
         <div id="login">   
           <h1>Login empresa</h1>
           
-          <form action="Cadastrocompany.php" method="post">
+          <form action="loginemp.php" method="post">
           
             <div class="top-row">
             <div class="field-wrap">
@@ -153,7 +106,7 @@
             <label>
               Senha<span class="req">*</span>
             </label>
-            <input type="email" name="senha" required autocomplete="off"/>
+            <input type="password" name="senha" required autocomplete="off"/>
           </div>
           
           <button type="submit" class="button button-block"/>Login</button>

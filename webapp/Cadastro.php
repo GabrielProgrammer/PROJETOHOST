@@ -55,7 +55,7 @@
               <label>
                 Nome<span class="req">*</span>
               </label>
-              <input type="text" name="nome" required autocomplete="off" />
+              <input type="text" name="username" required autocomplete="off" />
             </div>
         
             <div class="field-wrap">

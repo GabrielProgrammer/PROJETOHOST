@@ -1,12 +1,12 @@
 <?php
    header("Content-Type: text/html; charset=ISO-8859-1",true);
-   require_once("functions.php");
+   require_once("functionsemp.php");
    seguranca();
    $username = $_SESSION['user']['username'];
    $nome = $_SESSION['user']['nome'];
    $email = $_SESSION['user']['email'];
    $endereco = $_SESSION['user']['endereco'];
-
+   $id = $_SESSION['user']['idemp'];
    //ISSO DEVE ESTAR NO INICIO DE CADA PÁGINA QUE O USUÁRIO USAR APÓS O LOGIN
 ?>
 
@@ -68,7 +68,7 @@
         <div class="content-center">
           <div class="cc-profile-image"><a href="#"><img src="images/usua.jpg" alt="Image"/></a></div>
           <div class="h2 title"><?php echo $nome ?></div><br>
-          <p class="category text-white"> Consertamos: Computadores, notebooks, celulares e impressoras </p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contratos</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Avaliações</a>
+          <p class="category text-white"> Consertamos: Computadores, notebooks, celulares e impressoras </p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contratos</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Avaliações</a><a class="btn btn-primary" href="offer.php" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Oferecer</a>
         </div>
       </div>
       <div class="section">
@@ -86,9 +86,11 @@
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
             <div class="h4 mt-0 title">Sobre</div>
-            <p>Olá! Essa é uma empresa qualquer que vende produtos quaisquer ou oferece serviços quaisquer em troco de money, nada fora do comum não é mesmo? Porém, temos um imenso diferencial, não damos a minima para a opinião do cliente, você acretida? Não? Estão nos mande uma reclamação e veja como ele nunca será atentida! Veja como não damos a minima para o que você pensa da gente! O que está esperando?! Venha ser desprezado!<a href="https://templateflip.com/templates/creative-cv/" target="_blank">Site da empresa</a></p>
+            <p>Olá! Essa é uma empresa qualquer que vende produtos quaisquer ou oferece serviços quaisquer em troco de money, nada fora do comum não é mesmo? Porém, temos um imenso diferencial, não damos a minima para a opinião do cliente, você acretida? Não? Estão nos mande uma reclamação e veja como ele nunca será atentida! Veja como não damos a minima para o que você pensa da gente! O que está esperando?! Venha ser desprezado!<a href="editemp.php" target="_blank">Site da empresa</a></p>
           </div>
         </div>
+        <a href = "editemp.php"> Edite suas informações aqui </a>
+
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
             <div class="h4 mt-0 title">Informações Básicas</div>
