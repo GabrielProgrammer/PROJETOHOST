@@ -9,33 +9,33 @@
 
   
       <link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="LogoMarca/Icone.png" type="image/x-icon">
+  <link rel="shortcut icon" href="LogoMarca/Icone.png" type="image/x-icon">
   
 </head>
 
 <body>
-	<div class="tm-header" style="padding-top: 0px;bottom: 0px;top: 0px;border-bottom-width: 10px;padding-bottom: 80px;height: 85px;margin-top: 0px;">
-		<div class="container" style="margin-left: 110px;">
-  			<div class="row">
-		<div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
-  					<img style="position: relative; bottom: 15px;" onclick="window.open('index.php', '_self');" class="LogoMarca" src="LogoMarca/LogoMarca.png" title="Seja Bem-vindo(a) ao TechFix!"> 
-  				</div>
-  				<div class="col-lg-6 col-md-8 col-sm-9">
-	  				<div class="mobile-menu-icon">
-		              <i class="fa fa-bars"></i>
-		            </div>
-	  				<nav class="tm-nav" style="width: 700px; margin-left: 500px; position: absolute; top:0px; ">
-						<ul  style="margin-top: 6px;">
-							<li><a href="index.php" class="active">Menu</a></li>
-							<li><a href="Sobre.html">Sobre</a></li>
-							<li><a href="Empresas.html">Empresas</a></li>
-							<li><a href="Login.php">Login</a></li>
-						</ul>
-					</nav>		
-	  			</div>				
-  			</div>
-  		</div>
-  	</div>
+  <div class="tm-header" style="padding-top: 0px;bottom: 0px;top: 0px;border-bottom-width: 10px;padding-bottom: 80px;height: 85px;margin-top: 0px;">
+    <div class="container" style="margin-left: 110px;">
+        <div class="row">
+    <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+            <img style="position: relative; bottom: 15px;" onclick="window.open('index.php', '_self');" class="LogoMarca" src="LogoMarca/LogoMarca.png" title="Seja Bem-vindo(a) ao TechFix!"> 
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-9">
+            <div class="mobile-menu-icon">
+                  <i class="fa fa-bars"></i>
+                </div>
+            <nav class="tm-nav" style="width: 700px; margin-left: 500px; position: absolute; top:0px; ">
+            <ul  style="margin-top: 6px;">
+              <li><a href="index.php" class="active">Menu</a></li>
+              <li><a href="Sobre.html">Sobre</a></li>
+              <li><a href="Empresas.html">Empresas</a></li>
+              <li><a href="Login.php">Login</a></li>
+            </ul>
+          </nav>    
+          </div>        
+        </div>
+      </div>
+    </div>
 
   <div class="form" style="margin-top: 100px">
       
@@ -172,6 +172,76 @@
 
             <div class="field-wrap">
             <label>
+              Fundadoes <span class="req">*</span>
+            </label>
+            <input type="text" name="fund" required autocomplete="off"/>
+          </div>
+
+           <label>
+              Data de Fundação <span class="req">*</span>
+            </label>
+            <input type="text" name="creat" required autocomplete="off"/>
+          </div>
+
+           <label>
+              Telefone <span class="req">*</span>
+            </label>
+            <input type="number" name="telefone" required autocomplete="off"/>
+          </div>
+
+           <label>
+              Sobre <span class="req">*</span>
+            </label>
+            <input type="text" name="sobre" required autocomplete="off"/>
+          </div>
+
+           <label>
+              Estado <span class="req">*</span>
+             <select name="Estado">
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+          </div>7
+
+             <label>
+              Cidade <span class="req">*</span>
+            </label>
+            <input type="text" name="cidade" required autocomplete="off"/>
+          </div>
+
+           <label>
+              Bairro <span class="req">*</span>
+            </label>
+            <input type="text" name="bairro" required autocomplete="off"/>
+          </div>
+
+           <label>
               Endereço <span class="req">*</span>
             </label>
             <input type="text" name="endereco" required autocomplete="off"/>

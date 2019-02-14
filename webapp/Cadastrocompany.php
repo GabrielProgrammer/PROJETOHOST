@@ -11,6 +11,13 @@
 			$senha =  $_POST['senha'];
 			$cnpj = $_POST['cnpj'];
 			$endereco = $_POST['endereco'];
+			$fund = $_POST['fund'];
+			$creat = $_POST['creat'];
+			$telefone = $_POST['telefone'];
+			$estado = $_POST['estado'];
+			$cidade = $_POST['cidade'];
+			$bairro = $_POST['bairro'];
+			$sobre = $_POST['sobre'];
 
 			cadastrar($username, $email, $senha, $cnpj, $endereco );
 		}
@@ -28,11 +35,11 @@
 		return true;
 	}
 
-	function cadastrar($username, $email, $senha, $cnpj, $endereco) {
+	function cadastrar($username, $email, $senha, $cnpj, $endereco, $fund, $creat, $telefone, $estado, $cidade, $bairro, $sobre) {
 		$config = new Config();
 		$conexao = $config->conectaBanco();
 
-		$query = "INSERT INTO empresa (username, email, senha, cnpj, endereco) VALUES ('".$username."', '".$email."', '".$senha."', '".$cnpj."', '".$endereco."')";
+		$query = "INSERT INTO empresa (username, email, senha, cnpj, endereco, fund, creat, telefone, estado, cidade, bairro, sobre) VALUES ('".$username."', '".$email."', '".$senha."', '".$cnpj."', '".$endereco."', '".$fund."', '".$creat."', '".$telefone."', '".$estado."', '".$cidade."', '".$bairro."', '".$sobre."')";
 
 		$result = mysqli_query($conexao, $query) or die('Invalid query: ' . $conexao->error);
 
