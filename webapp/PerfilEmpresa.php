@@ -6,8 +6,16 @@
    $nome = $_SESSION['user']['nome'];
    $email = $_SESSION['user']['email'];
    $endereco = $_SESSION['user']['endereco'];
+   $cnpj = $_SESSION['user']['cnpj'];
+   $fund = $_SESSION['user']['fund'];
+   $creat = $_SESSION['user']['creat'];
+   $telefone = $_SESSION['user']['telefone'];
+   $cidade = $_SESSION['user']['cidade'];
+   $bairro = $_SESSION['user']['bairro'];
+   $sobre = $_SESSION['user']['sobre'];
    $id = $_SESSION['user']['idemp'];
-   //ISSO DEVE ESTAR NO INICIO DE CADA PÁGINA QUE O USUÁRIO USAR APÓS O LOGIN
+
+
 ?>
 <?php 
 
@@ -99,7 +107,7 @@ or die("Error " . mysqli_error($con));
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
             <div class="h4 mt-0 title">Sobre</div>
-            <p>Olá! Essa é uma empresa qualquer que vende produtos quaisquer ou oferece serviços quaisquer em troco de money, nada fora do comum não é mesmo? Porém, temos um imenso diferencial, não damos a minima para a opinião do cliente, você acretida? Não? Estão nos mande uma reclamação e veja como ele nunca será atentida! Veja como não damos a minima para o que você pensa da gente! O que está esperando?! Venha ser desprezado!<a href="editemp.php" target="_blank">Site da empresa</a></p>
+            <p><?php echo $sobre ?><a href="editemp.php" target="_blank">Site da empresa</a></p>
           </div>
         </div>
         <a href = "editemp.php"> Edite suas informações aqui </a>
@@ -113,19 +121,19 @@ or die("Error " . mysqli_error($con));
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Fundação:</strong></div>
-              <div class="col-sm-8">24 de agosto de 1957</div>
+              <div class="col-sm-8"><?php echo $creat?></div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Fundador(es):</strong></div>
-              <div class="col-sm-8">Gabriel da Silva Souza e Ana Carolina</div>
+              <div class="col-sm-8"><?php echo $fund?></div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">E-mail:</strong></div>
-              <div class="col-sm-8">empresa@company.com</div>
+              <div class="col-sm-8"><?php echo $email?>m</div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Telefone:</strong></div>
-              <div class="col-sm-8">(66) 6666-6666</div>
+              <div class="col-sm-8"><?php echo $telefone ?></div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Endereço:</strong></div>
@@ -133,7 +141,7 @@ or die("Error " . mysqli_error($con));
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Origem:</strong></div>
-              <div class="col-sm-8"> Rio de Janeiro, Brasil </div>
+              <div class="col-sm-8"> <?php echo $cidade ?>,<?php echo $bairro ?> </div>
             </div>
           </div>
         </div>

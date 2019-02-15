@@ -47,8 +47,16 @@
 			$_SESSION['user']['username'] = $user['username'];
 			$_SESSION['user']['nome'] = $user['nome'];
 			$_SESSION['user']['email'] = $user['email'];
-			$_SESSION['user']['endereco'] = $user['endereco'];
+			$_SESSION['user']['cnpj'] = $user['cnpj'];
+			$_SESSION['user']['fund'] = $user['fund'];
+			$_SESSION['user']['creat'] = $user['creat'];
+			$_SESSION['user']['telefone'] = $user['telefone'];
+			$_SESSION['user']['cidade'] = $user['cidade'];
+			$_SESSION['user']['bairro'] = $user['bairro'];
+			$_SESSION['user']['sobre'] = $user['sobre'];
 			$_SESSION['user']['idemp'] = $user['idemp'];
+			$_SESSION['user']['endereco'] = $user['endereco'];
+
 			
 			//AQUI AGORA VAI FICAR TODAS ENTIDADES DA TABELA
 
