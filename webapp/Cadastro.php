@@ -177,24 +177,27 @@
             <input type="text" name="fund" required autocomplete="off"/>
           </div>
 
+<div class="field-wrap">
            <label>
               Data de Fundação <span class="req">*</span>
             </label>
             <input type="text" name="creat" required autocomplete="off"/>
           </div>
 
+<div class="field-wrap">
            <label>
               Telefone <span class="req">*</span>
             </label>
             <input type="number" name="telefone" required autocomplete="off"/>
           </div>
 
+<div class="field-wrap">
            <label>
               Sobre <span class="req">*</span>
             </label>
             <input type="text" name="sobre" required autocomplete="off"/>
           </div>
-
+<div class="field-wrap">
            <label>
               Estado <span class="req">*</span>
              <select name="Estado">
@@ -227,20 +230,23 @@
                 <option value="SE">Sergipe</option>
                 <option value="TO">Tocantins</option>
             </select>
-          </div>7
-
+          </div>
+          
+<div class="field-wrap">
              <label>
               Cidade <span class="req">*</span>
             </label>
             <input type="text" name="cidade" required autocomplete="off"/>
           </div>
 
+<div class="field-wrap">
            <label>
               Bairro <span class="req">*</span>
             </label>
             <input type="text" name="bairro" required autocomplete="off"/>
           </div>
 
+<div class="field-wrap">
            <label>
               Endereço <span class="req">*</span>
             </label>

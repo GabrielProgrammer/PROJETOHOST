@@ -14,12 +14,11 @@
 			$fund = $_POST['fund'];
 			$creat = $_POST['creat'];
 			$telefone = $_POST['telefone'];
-			$estado = $_POST['estado'];
 			$cidade = $_POST['cidade'];
 			$bairro = $_POST['bairro'];
 			$sobre = $_POST['sobre'];
 
-			cadastrar($username, $email, $senha, $cnpj, $endereco );
+			cadastrar($username, $email, $senha, $cnpj, $endereco, $fun, $creat, $telefone, $cidade, $bairro, $sobre );
 		}
 		else {
 			$message = '<h1>Por favor, preencha os campos corretamente.</h1>
@@ -35,11 +34,11 @@
 		return true;
 	}
 
-	function cadastrar($username, $email, $senha, $cnpj, $endereco, $fund, $creat, $telefone, $estado, $cidade, $bairro, $sobre) {
+	function cadastrar($username, $email, $senha, $cnpj, $endereco, $fund, $creat, $telefone, $cidade, $bairro, $sobre) {
 		$config = new Config();
 		$conexao = $config->conectaBanco();
 
-		$query = "INSERT INTO empresa (username, email, senha, cnpj, endereco, fund, creat, telefone, estado, cidade, bairro, sobre) VALUES ('".$username."', '".$email."', '".$senha."', '".$cnpj."', '".$endereco."', '".$fund."', '".$creat."', '".$telefone."', '".$estado."', '".$cidade."', '".$bairro."', '".$sobre."')";
+		$query = "INSERT INTO empresa (username, email, senha, cnpj, endereco, fund, creat, telefone, cidade, bairro, sobre) VALUES ('".$username."', '".$email."', '".$senha."', '".$cnpj."', '".$endereco."', '".$fund."', '".$creat."', '".$telefone."','".$cidade."', '".$bairro."', '".$sobre."')";
 
 		$result = mysqli_query($conexao, $query) or die('Invalid query: ' . $conexao->error);
 
