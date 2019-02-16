@@ -19,7 +19,7 @@
 ?>
 <?php 
 
-$con = mysqli_connect("localhost", "root", "", "tech") 
+$con = mysqli_connect("localhost", "root", "root", "tech") 
 or die("Error " . mysqli_error($con));
 
 
@@ -28,7 +28,7 @@ or die("Error " . mysqli_error($con));
  $que = "SELECT * FROM image where fk_idemp='$id' ";
  $result = mysqli_query($con, $que);
  $row=mysqli_fetch_assoc($result);
-
+	
 
 ?>
 <!DOCTYPE html>

@@ -33,7 +33,7 @@
 			}
 		?>
 <?php
-$con = mysqli_connect("localhost", "root", "", "tech") 
+$con = mysqli_connect("localhost", "root", "root", "tech") 
 or die("Error " . mysqli_error($con));
 
  if(isset($_POST['cover_up']))

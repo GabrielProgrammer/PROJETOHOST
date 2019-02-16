@@ -1,7 +1,7 @@
 
 <?php
 
-	$con = mysqli_connect('127.0.0.1','root', 'root');
+	$con = mysqli_connect('localhost','root', 'root');
 	
 	if(!$con)
 	{

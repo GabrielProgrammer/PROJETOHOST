@@ -6,7 +6,7 @@
 Email id : maurya.shubham5@gmail.com
 **/
 //connect to mysql database
-$con = mysqli_connect("localhost", "root", "", "image") 
+$con = mysqli_connect("localhost", "root", "root", "image") 
 or die("Error " . mysqli_error($con));
 //Upload Image
  if(isset($_POST['cover_up']))

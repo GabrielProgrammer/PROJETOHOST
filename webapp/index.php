@@ -301,6 +301,7 @@ http://www.templatemo.com/tm-475-holiday
 					</div>
 				</div>
 			</div>
+			
 			<div class="row">
 				<div class="col-lg-12">
 					<p class="home-description">Somos um grupo desenvolvido para facilitar o seu aprimoramento e difusão de serviço online. Nós da TechFix esperamos que você se satisfaça com o nosso serviço e atendimento para que possamos continuar com a expansão de nossa empresa. Atenciosamente, equipe de gerenciamento TechFix.<a href="http://www.facebook.com/templatemo" target="_parent"> contact us </a>. O crédito vai para <a rel="DuplaINF" href="http://unsplash.com" target="_parent">Google Imagem</a> para imagens usadas neste modelo..</p>					

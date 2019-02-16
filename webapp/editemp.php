@@ -18,7 +18,7 @@
      
     $hostname = "localhost";
     $user = "root";
-    $password = "";
+    $password = "root";
     $databaseName = "tech";
     
     $connect = mysqli_connect($hostname, $user, $password, $databaseName);
