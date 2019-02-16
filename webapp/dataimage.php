@@ -7,7 +7,7 @@
 ?>
 
 <?php
-$con = mysqli_connect("localhost", "root", "root", "tech") 
+$con = mysqli_connect("localhost", "root", "", "tech") 
 or die("Error " . mysqli_error($con));
 
  if(isset($_POST['cover_up']))
@@ -47,7 +47,7 @@ or die("Error " . mysqli_error($con));
  // if no error occured, continue ....
  if(!isset($errMSG))
  {
- $que = "INSERT INTO image (b_image, fk_idemp) VALUES('" . $coverpic . "', '". $id ."')";
+ $que = "UPDATE empresa SET `b_image`='" . $coverpic . "' WHERE  `idemp`= '".$id."' ";
  if(mysqli_query($con, $que))
  {
  echo "<script type='text/javascript'>alert('Posted succesfully.');</script>";
@@ -65,7 +65,7 @@ or die("Error " . mysqli_error($con));
  //Get Last Inserted Id
  $last_id = mysqli_insert_id($con);
  //Fetch Qquery
- $que = "SELECT * FROM image where fk_idemp='$id' ";
+ $que = "SELECT * FROM empresa WHERE idemp = '$id' ";
  $result = mysqli_query($con, $que);
  $row=mysqli_fetch_assoc($result);
 ?>
