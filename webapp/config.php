@@ -5,8 +5,8 @@
 	{
 		private $servidor = "localhost";
 		private $user = "root";
-		private $senha = "";
-		private $banco = "tech";
+		private $senha = "root";
+		private $banco = "Tech";
 
 		function conectaBanco() {
 			$con = mysqli_connect($this->servidor, $this->user, $this->senha, $this->banco);

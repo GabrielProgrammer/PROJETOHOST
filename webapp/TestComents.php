@@ -6,7 +6,7 @@
 <BODY>
 <h2>Comentários Enviados pelos Usuários</h3>
 <?php
-$link=mysql_connect("localhost",'root','');
+$link=mysql_connect("localhost",'root','root');
 $banco=mysql_select_db("bdcomentarios");
 ?>
 
