@@ -1,4 +1,22 @@
+<?php 
 
+$con = mysqli_connect("localhost", "root", "", "tech") 
+or die("Error " . mysqli_error($con));
+
+
+    $gera = rand(1,2);
+
+ $last_id = mysqli_insert_id($con);
+
+$id = $gera;
+ $que = "SELECT * FROM servico WHERE id_serv = '".$id."' ";
+ $result = mysqli_query($con, $que);
+ $row=mysqli_fetch_assoc($result);
+
+ 
+	
+
+?>
 
 
 <!DOCTYPE html>
@@ -218,51 +236,34 @@ http://www.templatemo.com/tm-475-holiday
 					</div>
 				</div>								
 			</div>
-<?php 
+ 
 
-require_once("config.php");
-		$config = new Config();
-		$conexao = $config->conectaBanco();
 
-		$query = "SELECT serv, preco FROM servico";
+			    <div class=col-lg-4 col-md-4 col-sm-6>
+				<div class=tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center>
+					<img src="MYSQL/<?php echo $row['s_image'];?>"alt=image class=img-responsive>
+					<a href=#>
+					<a href=#>
+						<div class=tm-green-gradient-bg tm-city-price-container>
+							<span><?php echo $row['serv'];?></span>
+							<span>R$ <?php echo $row['preco'];?></span>;
+						</div>	
+					</a>			
+				</div>		
+			</div>
+			<div class=col-lg-4 col-md-4 col-sm-6>
+				<div class=tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right>
+					<img src="MYSQL/<?php echo $row['s_image'];?>" alt=image class=img-responsive>
+					<a href=#>
+						<div class=tm-red-gradient-bg tm-city-price-container>
+							<span><?php echo $row['serv'];?></span>
+							<span>R$ <?php echo $row['preco'];?></span>
+						</div>
+					</a>			
+				</div>				
+			</div>
+		</div>
 
-		$result = mysqli_query($conexao, $query) or die('Invalid query: ' . $conexao->error);
-
-		$num = 0;
-		if ($result->num_rows > 0) {
-    	// output data of each row
-	    while($row = $result->fetch_assoc()) {
-				$num = $num + 1;
-
-	echo		    "<div class=col-lg-4 col-md-4 col-sm-6>";
-	echo			"<div class=tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center>";
-	echo				"<img src=img/index-01.jpg alt=image class=img-responsive>";
-	echo				"<a href=#>";
-	echo				"<a href=#>";
-	echo					"<div class=tm-green-gradient-bg tm-city-price-container>";
-	echo						"<span>".$row["serv"]."</span>";
-	echo						"<span>R$ ".$row["preco"]."</span>";
-	echo					"</div>";	
-	echo				"</a>";			
-	echo			"</div>";		
-	echo		"</div>";
-	echo		"<div class=col-lg-4 col-md-4 col-sm-6>";
-	echo			"<div class=tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right>";
-	echo				"<img src=img/index-02.jpg alt=image class=img-responsive>";
-	echo				"<a href=#>";
-	echo					"<div class=tm-red-gradient-bg tm-city-price-container>";
-	echo						"<span>".$row["serv"]."</span>";
-	echo						"<span>R$ ".$row["preco"]."</span>";
-	echo					"</div>";	
-	echo				"</a>";					
-	echo			"</div>";				
-	echo		"</div>";
-	echo	"</div>";
-	 break;
-	}
-		$conexao->close();
-	}
-?>
 		<div class="section-margin-top">
 			<div class="row">				
 				<div class="tm-section-header">

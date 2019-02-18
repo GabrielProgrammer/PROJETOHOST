@@ -1,12 +1,6 @@
 <?php
-	$conectar = mysqli_connect('localhost','root', 'root');
+	$conectar = mysqli_connect('localhost','root', '');
 	$banco = mysqli_select_db($conectar, "tech");
-	
-	header('Content-Type: text/html; charset=utf-8');
-	mysql_query("SET NAMES 'utf8'");
-	mysql_query('SET character_set_connection=utf8');
-	mysql_query('SET character_set_client=utf8');
-	mysql_query('SET character_set_results=utf8');
 	
 	if(!$conectar)
 	{
