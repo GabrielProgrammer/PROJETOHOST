@@ -1,6 +1,6 @@
 <?php
    header("Content-Type: text/html; charset=ISO-8859-1",true);
-   require_once("functionuser.php");
+   require_once("functions.php");
    seguranca();
    $username = $_SESSION['user']['username'];
    $nome = $_SESSION['user']['nome'];
@@ -10,26 +10,9 @@
    $dtnasc = $_SESSION['user']['dtnasc'];
    $cpf = $_SESSION['user']['cpf'];
    $rg = $_SESSION['user']['rg'];
-   $sobre = $_SESSION['user']['sobre'];
-   $id = $_SESSION['user']['coduser']
 
 
    //ISSO DEVE ESTAR NO INICIO DE CADA PÁGINA QUE O USUÁRIO USAR APÓS O LOGIN
-?>
-
-<?php 
-
-$con = mysqli_connect("localhost", "root", "", "tech") 
-or die("Error " . mysqli_error($con));
-
-
- $last_id = mysqli_insert_id($con);
-
- $que = "SELECT * FROM usuario where coduser='$id' ";
- $result = mysqli_query($con, $que);
- $row=mysqli_fetch_assoc($result);
-  
-
 ?>
 
 <!DOCTYPE html>
@@ -88,7 +71,7 @@ or die("Error " . mysqli_error($con));
       <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg');"></div>
       <div class="container">
         <div class="content-center">
-          <div class="cc-profile-image"><a href="datauser.php"><img src="MYSQL/<?php echo $row['u_image']; ?> " alt="Image"/></a></div>
+          <div class="cc-profile-image"><a href="#"><img src="images/usua.jpg" alt="Image"/></a></div>
           <div class="h2 title"><?php echo $nome ?></div><br>
           <p class="category text-white">Desenvolvedor web, Designer, Técnico em manutenção: Luiza</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contratos</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Avaliações</a>
         </div>
@@ -109,7 +92,7 @@ or die("Error " . mysqli_error($con));
           <div class="card-body">
             <div class="h4 mt-0 title">Sobre</div>
             <p>Olá! Eu sou Anthony Barnett. Desenvolvedor Web, Designer Gráfico e Técnico em manutenção.</p>
-            <p><?php echo $sobre?> <a href="https://templateflip.com/templates/creative-cv/" target="_blank">Saber mais</a></p>
+            <p>O CV criativo é um modelo de currículo HTML para profissionais. Construído com Bootstrap 4, agora UI Kit e FontAwesome, este modelo de design moderno e responsivo é perfeito para mostrar seu portfólio, habilidades e experiência. <a href="https://templateflip.com/templates/creative-cv/" target="_blank">Saber mais</a></p>
           </div>
         </div>
         <div class="col-lg-6 col-md-12">

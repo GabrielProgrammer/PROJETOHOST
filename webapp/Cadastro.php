@@ -79,7 +79,7 @@
             <label>
               Data de Nascimento<span class="req">*</span>
             </label>
-                <input type="data" name="dt_nascimento" required autocomplete="off"/>
+                <input type="date" name="dtnasc" required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
@@ -122,6 +122,13 @@
               Cidade<span class="req">*</span>
             </label>
             <input type="text" name="cidade" required autocomplete="off"/>
+          </div>
+
+           <div class="field-wrap">
+            <label>
+              Sobre você<span class="req">*</span>
+            </label>
+            <input type="text" name="sobre" required autocomplete="off"/>
           </div>
           
               <button type="submit" class="button button-block"/>Cadastre-se</button>

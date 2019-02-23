@@ -47,9 +47,17 @@
 			$_SESSION['user']['username'] = $user['username'];
 			$_SESSION['user']['nome'] = $user['nome'];
 			$_SESSION['user']['email'] = $user['email'];
+			$_SESSION['user']['telefone'] = $user['telefone'];
+			$_SESSION['user']['estado'] = $user['estado'];
+			$_SESSION['user']['dtnasc'] = $user['dtnasc'];
+			$_SESSION['user']['cpf'] = $user['cpf'];
+			$_SESSION['user']['rg'] = $user['rg'];
+			$_SESSION['user']['sobre'] = $user['sobre'];
+			$_SESSION['user']['coduser'] = $user['coduser'];
+
 			//AQUI AGORA VAI FICAR TODAS ENTIDADES DA TABELA
 
-			header("Location: PerfilEmpresa.php"); //O PERFIL DO USUÁRIO
+			header("Location: Perfil.php"); //O PERFIL DO USUÁRIO
 
 		} else {
 			$message = '<h1>Senha ou username Incorretos.</h1>

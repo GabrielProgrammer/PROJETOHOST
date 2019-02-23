@@ -242,13 +242,15 @@ http://www.templatemo.com/tm-475-holiday
 			    <div class=col-lg-4 col-md-4 col-sm-6>
 				<div class=tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center>
 					<img src="MYSQL/<?php echo $row['s_image'];?>"alt=image class=img-responsive>
-					<a href=#>
-					<a href=#>
+					
+					<form method="post" action="product.php">
+						<input type="hidden" name="id_serv" value="<?php echo $id?>">
 						<div class=tm-green-gradient-bg tm-city-price-container>
 							<span><?php echo $row['serv'];?></span>
 							<span>R$ <?php echo $row['preco'];?></span>;
+							<button type="submit" name="submit">aperte</button>
 						</div>	
-					</a>			
+					</form>			
 				</div>		
 			</div>
 			<div class=col-lg-4 col-md-4 col-sm-6>
