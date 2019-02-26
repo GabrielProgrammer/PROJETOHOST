@@ -910,3 +910,14 @@ hr { border-top: 1px solid #111010; }
 	position: relative;
 	bottom: 15px;
 }
+
+.Font-servico{
+	color: black;
+	font-family: 'Times New Roman', Times, serif;
+	transition: color 0.8s;
+}
+
+.Font-servico:hover{
+	color: #F9E58B;
+	transition: color 0.8s;
+}

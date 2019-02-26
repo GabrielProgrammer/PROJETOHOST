@@ -13,16 +13,13 @@ $id = $gera;
  $result = mysqli_query($con, $que);
  $row=mysqli_fetch_assoc($result);
 
- 
-	
-
 ?>
 
 
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="utf-8">
 <head>
-  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TechFix - Home</title>
@@ -76,7 +73,7 @@ http://www.templatemo.com/tm-475-holiday
 		<!-- Flexslider -->
 		<div class="flexslider flexslider-banner">
 		  <ul class="slides">
-		  	<li style="position: relative; left: 38px;">
+		  	<li style="position: relative;">
 			    <div class="tm-banner-inner">
 					<h1 style="z-index: 2; text-shadow: 2px 4px 8px black;" class="tm-banner-title">Seja <span>Bem-vindo(a) ao</span></h1>
 					<p style="z-index: 2; text-shadow: 2px 4px 8px black;" class="tm-banner-subtitle" style="color: #FCDD44">TechFix!</p>
@@ -84,7 +81,7 @@ http://www.templatemo.com/tm-475-holiday
 				</div>
 				<img src="img/boasvindas.png" alt="Image" />	
 		    </li>
-		    <li style="position: relative; left: 38px;">
+		    <li style="position: relative;">
 			    <div class="tm-banner-inner">
 					<h1 style="z-index: 2; text-shadow: 2px 4px 8px black;" class="tm-banner-title">Encontre <span>O MELHOR</span></h1>
 					<p style="z-index: 2; text-shadow: 2px 4px 8px black;" class="tm-banner-subtitle" style="color: #FCDD44">ORÇAMENTO</p>
@@ -92,7 +89,7 @@ http://www.templatemo.com/tm-475-holiday
 				</div>
 				<img src="img/banner-1.jpg" alt="Image" />	
 		    </li>
-		    <li style="position: relative; left: 38px;">
+		    <li style="position: relative;">
 			    <div class="tm-banner-inner">
 					<h1 style="z-index: 2; text-shadow: 2px 4px 8px black;" class="tm-banner-title">Tire <span>suas</span></h1>
 					<p style="z-index: 2; text-shadow: 2px 4px 8px black;" class="tm-banner-subtitle" style="color: #FCDD44">Dúvidas</p>
@@ -100,7 +97,7 @@ http://www.templatemo.com/tm-475-holiday
 				</div>
 		      <img src="img/banner-2.jpg" alt="Image" />
 		    </li>
-		    <li style="position: relative; left: 38px;">
+		    <li style="position: relative;">
 			    <div class="tm-banner-inner">
 					<h1 style="z-index: 2; text-shadow: 2px 4px 8px black;" class="tm-banner-title">Participe <span>do</span></h1>
 					<p style="z-index: 2; text-shadow: 2px 4px 8px black;" class="tm-banner-subtitle" style="color: #FCDD44">Forúm</p>
@@ -246,9 +243,17 @@ http://www.templatemo.com/tm-475-holiday
 					<form method="post" action="product.php">
 						<input type="hidden" name="id_serv" value="<?php echo $id?>">
 						<div class=tm-green-gradient-bg tm-city-price-container>
-							<span><?php echo $row['serv'];?></span>
-							<span>R$ <?php echo $row['preco'];?></span>;
-							<button type="submit" name="submit">aperte</button>
+							<center>
+								<div style="position: relative; left: 100px; margin-top: 20px;">
+									<div>
+										<span class="Font-servico"><?php echo $row['serv']; echo ":";?></span>
+										<span class="Font-servico">R$ <?php echo $row['preco'];?></span>;
+									</div>
+									<div style="margin-top: -15px;">
+										<button type="submit" name="submit" class="tm-yellow-btn">Visualizar</button>
+									</div>
+								</div>
+							</center>
 						</div>	
 					</form>			
 				</div>		
@@ -257,11 +262,22 @@ http://www.templatemo.com/tm-475-holiday
 				<div class=tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right>
 					<img src="MYSQL/<?php echo $row['s_image'];?>" alt=image class=img-responsive>
 					<a href=#>
+					<form method="post" action="product.php">
 						<div class=tm-red-gradient-bg tm-city-price-container>
-							<span><?php echo $row['serv'];?></span>
-							<span>R$ <?php echo $row['preco'];?></span>
+							<center>
+								<div style="position: relative; left: 100px; margin-top: 20px;">
+									<div>
+										<span class="Font-servico"><?php echo $row['serv']; echo ":";?></span>
+										<span class="Font-servico">R$ <?php echo $row['preco']; echo ";";?></span>
+									</div>
+									<div style="margin-top: -15px;">
+										<button type="submit" name="submit" class="tm-yellow-btn">Visualizar</button>
+									</div>
+								</div>
+							</center>
 						</div>
-					</a>			
+					</a>
+					</form>				
 				</div>				
 			</div>
 		</div>
