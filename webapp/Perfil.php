@@ -11,7 +11,8 @@
    $cpf = $_SESSION['user']['cpf'];
    $rg = $_SESSION['user']['rg'];
    $sobre = $_SESSION['user']['sobre'];
-   $id = $_SESSION['user']['coduser']
+   $id = $_SESSION['user']['coduser'];
+   $profi = $_SESSION['user']['profi'];
 
 
    //ISSO DEVE ESTAR NO INICIO DE CADA PÁGINA QUE O USUÁRIO USAR APÓS O LOGIN
@@ -78,7 +79,7 @@ or die("Error " . mysqli_error($con));
       </div>      
     </div>
     </header>
-
+<!-- P#qMPz@J2Egcwkfprt3B-->
     
     <div class="page-content">
       <div>
@@ -89,8 +90,9 @@ or die("Error " . mysqli_error($con));
       <div class="container">
         <div class="content-center">
           <div class="cc-profile-image"><a href="datauser.php"><img src="MYSQL/<?php echo $row['u_image']; ?> " alt="Image"/></a></div>
-          <div class="h2 title"><?php echo $nome ?></div><br>
-          <p class="category text-white">Desenvolvedor web, Designer, Técnico em manutenção: Luiza</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contratos</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Avaliações</a>
+          <div class="h2 title">Bem-Vindo(a): <?php echo $nome ?></div><br>
+
+          <p class="category text-white"><?php echo $profi?></p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contratos</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Avaliações</a>
         </div>
       </div>
       <div class="section">

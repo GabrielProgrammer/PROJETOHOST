@@ -89,7 +89,7 @@ or die("Error " . mysqli_error($con));
         <div class="content-center">
           <div class="cc-profile-image"><a href="dataimage.php"><img src="MYSQL/<?php echo $row['b_image']; ?> " alt="Image"/></a></div>
           <div class="h2 title"><?php echo $nome ?></div><br>
-          <p class="category text-white"> Consertamos: Computadores, notebooks, celulares e impressoras </p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contratos</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Avaliações</a><a class="btn btn-primary" href="offer.php" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Oferecer</a>
+          <p class="category text-white"> Consertamos: Computadores, notebooks, celulares e impressoras </p><a class="btn btn-primary smooth-scroll mr-2" href="lista.php" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contratos</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Avaliações</a><a class="btn btn-primary" href="offer.php" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Oferecer</a>
         </div>
       </div>
       <div class="section">

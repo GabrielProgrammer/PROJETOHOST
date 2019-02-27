@@ -54,6 +54,7 @@
 			$_SESSION['user']['rg'] = $user['rg'];
 			$_SESSION['user']['sobre'] = $user['sobre'];
 			$_SESSION['user']['coduser'] = $user['coduser'];
+			$_SESSION['user']['profi'] = $user['profi'];
 
 			//AQUI AGORA VAI FICAR TODAS ENTIDADES DA TABELA
 

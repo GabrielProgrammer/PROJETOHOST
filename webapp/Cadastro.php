@@ -13,7 +13,8 @@
   
 </head>
 
-<bodytrydgihkml,ç.;6rdtybl,];/64df7y~rf67tgyop,´.çr578´[]  <div class="tm-header" style="padding-top: 0px;bottom: 0px;top: 0px;border-bottom-width: 10px;padding-bottom: 80px;height: 85px;margin-top: 0px;">
+<body>
+<div class="tm-header" style="padding-top: 0px;bottom: 0px;top: 0px;border-bottom-width: 10px;padding-bottom: 80px;height: 85px;margin-top: 0px;">
     <div class="container" style="margin-left: 110px;">
         <div class="row">
     <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
@@ -129,6 +130,13 @@
               Sobre você<span class="req">*</span>
             </label>
             <input type="text" name="sobre" required autocomplete="off"/>
+          </div>
+
+           <div class="field-wrap">
+            <label>
+              Profissão<span class="req">*</span>
+            </label>
+            <input type="text" name="profi" required autocomplete="off"/>
           </div>
           
               <button type="submit" class="button button-block"/>Cadastre-se</button>
